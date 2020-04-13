@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema({
     name: {
@@ -30,6 +30,6 @@ const userSchema = mongoose.Schema({
     }
 });
 
-const user = mongoose.model('User', userSchema)
+const User = mongoose.model('User', userSchema)
 
-export default user;
+module.exports = { User };
