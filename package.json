@@ -8,8 +8,9 @@
     "npm": "6.12.1"
   },
   "scripts": {
-    "start": "nodemon server",
-    "backend": "nodemon server"
+    "start": "node server/index.js",
+    "start:dev": "nodemon server/index.js",
+    "backend": "nodemon server/index.js"
   },
   "author": "VIKAS BISATI",
   "license": "ISC",
