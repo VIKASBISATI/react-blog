@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.get("/", (req, res)=>{
-    res.json({ "hello": "deployent again"})
+    res.json({ "hello": "deployent again after adding vars"})
 })
 app.get('/api/user/auth', auth, (req,res) => {
     res.status(200).json({
